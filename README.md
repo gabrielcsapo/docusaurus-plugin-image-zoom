@@ -8,7 +8,7 @@
 
 ```js
   plugins: [
-    'plugin-image-zoom'
+    require.resolve('docusaurus-plugin-image-zoom')
   ],
 ```
 
