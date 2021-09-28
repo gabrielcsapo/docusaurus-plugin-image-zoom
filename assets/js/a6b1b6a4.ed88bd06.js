@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[745],{4241:function(a){a.exports=JSON.parse('{"allTagsPath":"/docusaurus-plugin-image-zoom/blog/tags","slug":"/docusaurus-plugin-image-zoom/blog/tags/hola","name":"hola","count":1,"permalink":"/docusaurus-plugin-image-zoom/blog/tags/hola"}')}}]);
