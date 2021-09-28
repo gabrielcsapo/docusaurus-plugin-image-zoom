@@ -2,19 +2,24 @@
   "name": "docusaurus-plugin-image-zoom",
   "version": "0.0.1",
   "private": false,
-  "scripts": {},
+  "scripts": {
+    "test": "echo 'none for now'"
+  },
   "main": "src/index.js",
-  "dependencies": {
-    "medium-zoom": "^1.0.6"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom.git"
-  },
   "author": "Gabriel J. Csapo <gabecsapo@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/issues"
   },
-  "homepage": "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom#readme"
+  "homepage": "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom.git"
+  },
+  "dependencies": {
+    "medium-zoom": "^1.0.6"
+  },
+  "workspaces": [
+    "website"
+  ]
 }

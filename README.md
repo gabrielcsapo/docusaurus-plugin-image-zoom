@@ -1,10 +1,16 @@
 # docusaurus-plugin-image-zoom
 
-## Install and Configure
+> Docusaurus plugin to utilize [`medium-zoom`](https://www.npmjs.com/package/medium-zoom) in your projects easily!
 
-- npm install docusaurus-plugin-image-zoom
+## Install
 
-- Add as a plugin to `docusaurus.config.js`, like this:
+```shell
+npm install docusaurus-plugin-image-zoom
+```
+
+## Usage
+
+Add as a plugin to `docusaurus.config.js`, like this:
 
 ```js
   plugins: [
@@ -12,7 +18,7 @@
   ],
 ```
 
-- Set the zoomSelector (optional, defaults to '.markdown img') in `docusaurus.config.js`, like this:
+Set the zoomSelector (optional, defaults to '.markdown img') in `docusaurus.config.js`, like this:
 
 ```js
   themeConfig: {
