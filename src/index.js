@@ -4,8 +4,10 @@ module.exports = function (context, options) {
   return {
     name: "docusaurus-plugin-image-zoom",
 
-    getClientModules(options) {
-      return [path.resolve(__dirname, "./zoom")];
-    },
+    getClientModules() {
+      return [
+        path.resolve(__dirname, "./zoom")
+      ]
+    }
   };
 };
