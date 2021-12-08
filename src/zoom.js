@@ -33,12 +33,16 @@ export default (function () {
   });
 
   setTimeout(() => {
+    if(zoomObject)
+      zoomObject.detach();
     zoomObject = mediumZoom(selector, config);
   }, 1000);
 
   return {
     onRouteUpdate() {
       setTimeout(() => {
+        if(zoomObject)
+          zoomObject.detach();
         zoomObject = mediumZoom(selector, config);
       }, 1000);
     },
