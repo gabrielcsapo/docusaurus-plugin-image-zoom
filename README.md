@@ -24,12 +24,12 @@ Set the zoomSelector (optional, defaults to '.markdown img') in `docusaurus.conf
   themeConfig: {
     zoom: {
       selector: '.markdown :not(em) > img',
-      // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
       background: {
         light: 'rgb(255, 255, 255)',
         dark: 'rgb(50, 50, 50)'
-      }
-
+      },
+      // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+      config: {}
     }
   },
 ```
