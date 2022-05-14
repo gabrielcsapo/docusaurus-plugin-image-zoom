@@ -3,7 +3,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 module.exports = {
   title: "docusaurus-plugin-image-zoom",
-  tagline: "Making local search easier and looking great!",
+  tagline: "Docusaurus plugin to utilize https://www.npmjs.com/package/medium-zoom in your projects easily!",
   url: "https://gabrielcsapo.github.io",
   baseUrl: "/docusaurus-plugin-image-zoom/",
   trailingSlash: true,
@@ -23,9 +23,11 @@ module.exports = {
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/edit/main",
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
