@@ -44,6 +44,7 @@ jobs:
           USE_SSH: true
           GIT_USER: git
         run: |
+          npm ci
           git config --global user.email "gabecsapo@gmail.com"
           git config --global user.name "Gabriel J. Csapo"
           cd website
