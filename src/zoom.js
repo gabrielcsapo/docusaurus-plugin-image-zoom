@@ -6,7 +6,7 @@ const { themeConfig } = siteConfig;
 function getBackgroundColor(zoom) {
   const isDarkMode = document.querySelector('html[data-theme="dark"]');
 
-  return isDarkMode ? (zoom.background?.dark || 'rgb(50, 50, 50)') : (zoom.background?.light || 'rgb(255, 255, 255)');
+  return isDarkMode ? (zoom.config?.background?.dark || 'rgb(50, 50, 50)') : (zoom.config?.background?.light || 'rgb(255, 255, 255)');
 }
 
 export default (function () {
@@ -19,12 +19,14 @@ export default (function () {
   const { zoom } = themeConfig;
   const { selector = ".markdown img", config = {} } = zoom || {};
 
-  config.background = getBackgroundColor(zoom);
+  const backgroundColor = getBackgroundColor(zoom)
+
+  config.background = backgroundColor
 
   var observer = new MutationObserver(function(mutations) {
     if(!zoomObject) return;
 
-    zoomObject.update({ background: getBackgroundColor(zoom) })
+    zoomObject.update({ background: backgroundColor })
   });
 
   observer.observe(document.querySelector('html'), { 
