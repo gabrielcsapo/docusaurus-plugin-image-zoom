@@ -28,8 +28,9 @@ Set the zoomSelector (optional, defaults to '.markdown img') in `docusaurus.conf
         light: 'rgb(255, 255, 255)',
         dark: 'rgb(50, 50, 50)'
       },
-      // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-      config: {}
+      config: {
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+      }
     }
   },
 ```
