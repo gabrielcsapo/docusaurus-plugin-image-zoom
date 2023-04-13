@@ -1,24 +1,46 @@
 {
   "name": "docusaurus-plugin-image-zoom",
-  "description": "Docusaurus plugin to utilize https://www.npmjs.com/package/medium-zoom in your projects easily!",
   "version": "0.1.1",
   "private": false,
-  "scripts": {
-    "test": "echo 'none for now'"
-  },
-  "main": "src/index.js",
-  "author": "Gabriel J. Csapo <gabecsapo@gmail.com>",
-  "license": "MIT",
+  "description": "Docusaurus plugin to utilize https://www.npmjs.com/package/medium-zoom in your projects easily!",
+  "homepage": "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom#readme",
   "bugs": {
     "url": "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/issues"
   },
-  "homepage": "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom.git"
   },
+  "license": "MIT",
+  "author": "Gabriel J. Csapo <gabecsapo@gmail.com>",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo 'none for now'"
+  },
   "dependencies": {
     "medium-zoom": "^1.0.6"
+  },
+  "devDependencies": {
+    "@release-it-plugins/lerna-changelog": "^5.0.0",
+    "release-it": "^15.5.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "release-it": {
+    "plugins": {
+      "@release-it-plugins/lerna-changelog": {
+        "infile": "CHANGELOG.md",
+        "launchEditor": true
+      }
+    },
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "tokenRef": "GITHUB_AUTH"
+    }
   },
   "volta": {
     "node": "16.20.0",
