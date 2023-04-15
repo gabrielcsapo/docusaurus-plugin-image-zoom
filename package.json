@@ -28,6 +28,7 @@
     "@release-it-plugins/lerna-changelog": "^5.0.0",
     "@tsconfig/docusaurus": "^1.0.7",
     "@types/node": "^18.15.11",
+    "prettier": "^2.8.7",
     "release-it": "^15.5.0",
     "typescript": "^5.0.4"
   },

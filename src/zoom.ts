@@ -28,8 +28,7 @@ export default (function () {
   let zoomObject: Zoom;
 
   const { zoom }: { zoom?: ZoomConfig } = themeConfig;
-  const { selector = '.markdown img', config = {} } =
-    zoom || ({} as ZoomConfig);
+  const { selector = '.markdown img', config = {} } = zoom || ({} as ZoomConfig);
 
   if (!zoom) {
     return null;
@@ -38,7 +37,9 @@ export default (function () {
   config.background = getBackgroundColor(zoom);
 
   var observer = new MutationObserver(function () {
-    if (!zoomObject) return;
+    if (!zoomObject) {
+      return;
+    }
 
     zoomObject.update({ background: getBackgroundColor(zoom) });
   });
@@ -51,14 +52,20 @@ export default (function () {
   });
 
   setTimeout(() => {
-    if (zoomObject) zoomObject.detach();
+    if (zoomObject) {
+      zoomObject.detach();
+    }
+
     zoomObject = mediumZoom(selector, config);
   }, 1000);
 
   return {
     onRouteUpdate() {
       setTimeout(() => {
-        if (zoomObject) zoomObject.detach();
+        if (zoomObject) {
+          zoomObject.detach();
+        }
+
         zoomObject = mediumZoom(selector, config);
       }, 1000);
     },

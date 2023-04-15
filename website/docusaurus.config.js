@@ -1,30 +1,29 @@
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 module.exports = {
-  title: "docusaurus-plugin-image-zoom",
-  tagline: "Docusaurus plugin to utilize https://www.npmjs.com/package/medium-zoom in your projects easily!",
-  url: "https://gabrielcsapo.github.io",
-  baseUrl: "/docusaurus-plugin-image-zoom/",
+  title: 'docusaurus-plugin-image-zoom',
+  tagline:
+    'Docusaurus plugin to utilize https://www.npmjs.com/package/medium-zoom in your projects easily!',
+  url: 'https://gabrielcsapo.github.io',
+  baseUrl: '/docusaurus-plugin-image-zoom/',
   trailingSlash: true,
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "gabrielcsapo",
-  projectName: "docusaurus-plugin-image-zoom",
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'gabrielcsapo',
+  projectName: 'docusaurus-plugin-image-zoom',
   presets: [
     [
-      "@docusaurus/preset-classic",
+      '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-            "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/edit/main",
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: 'https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/edit/main',
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/edit/main",
+          editUrl: 'https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/edit/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -35,48 +34,48 @@ module.exports = {
   themeConfig: {
     zoom: {},
     navbar: {
-      title: "docusaurus-plugin-image-zoom",
+      title: 'docusaurus-plugin-image-zoom',
       logo: {
-        alt: "docusaurus-plugin-image-zoom logo",
-        src: "img/logo.svg",
+        alt: 'docusaurus-plugin-image-zoom logo',
+        src: 'img/logo.svg',
       },
       items: [
         {
-          to: "/docs/getting-started",
-          position: "left",
-          label: "Documentation",
+          to: '/docs/getting-started',
+          position: 'left',
+          label: 'Documentation',
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom",
-          label: "GitHub",
-          position: "right",
+          href: 'https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         {
-          title: "Docs",
+          title: 'Docs',
           items: [
             {
-              label: "Configuration",
-              to: "/docs/getting-started",
+              label: 'Configuration',
+              to: '/docs/getting-started',
             },
           ],
         },
         {},
         {
-          title: "More",
+          title: 'More',
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: 'Blog',
+              to: '/blog',
             },
             {
-              label: "GitHub",
-              href: "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom",
+              label: 'GitHub',
+              href: 'https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom',
             },
           ],
         },
@@ -89,9 +88,9 @@ module.exports = {
     },
   },
   plugins: [
-    [require.resolve('../src/index.js'), { id: 'docusaurus-plugin-image-zoom'}],
+    [require.resolve('../src/index.js'), { id: 'docusaurus-plugin-image-zoom' }],
     [
-      require.resolve("docusaurus-plugin-search-local"),
+      require.resolve('docusaurus-plugin-search-local'),
       {
         highlightSearchTermsOnTargetPage: true,
       },

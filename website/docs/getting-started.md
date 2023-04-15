@@ -16,7 +16,7 @@ npm install docusaurus-plugin-image-zoom --save
 
 ```js title=docusaurus.config.js
 {
-  plugins: [require.resolve("docusaurus-plugin-image-zoom")];
+  plugins: [require.resolve('docusaurus-plugin-image-zoom')];
 }
 ```
 
