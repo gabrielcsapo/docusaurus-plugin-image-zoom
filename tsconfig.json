@@ -1,0 +1,22 @@
+{
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "strict": true,
+    "target": "es2018",
+    "baseUrl": ".",
+    "outDir": "lib",
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "paths": {
+      "*": ["./types/*"]
+    }
+  },
+  "include": ["./src"],
+  "exclude": ["**/node_modules/**"]
+}
