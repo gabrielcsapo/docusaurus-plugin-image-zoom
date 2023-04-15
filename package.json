@@ -13,16 +13,23 @@
   },
   "license": "MIT",
   "author": "Gabriel J. Csapo <gabecsapo@gmail.com>",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo 'none for now'"
   },
   "dependencies": {
     "medium-zoom": "^1.0.6"
   },
   "devDependencies": {
+    "@docusaurus/module-type-aliases": "^2.4.0",
+    "@docusaurus/theme-classic": "^2.4.0",
+    "@docusaurus/types": "^2.4.0",
     "@release-it-plugins/lerna-changelog": "^5.0.0",
-    "release-it": "^15.5.0"
+    "@tsconfig/docusaurus": "^1.0.7",
+    "@types/node": "^18.15.11",
+    "release-it": "^15.5.0",
+    "typescript": "^5.0.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
