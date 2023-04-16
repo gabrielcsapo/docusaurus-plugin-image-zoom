@@ -16,7 +16,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "test": "echo 'none for now'"
   },
   "dependencies": {
