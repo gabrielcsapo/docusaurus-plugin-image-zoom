@@ -1,3 +1,14 @@
+
+## v0.1.3 (2023-04-16)
+
+#### :house: Internal
+* [#20](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/20) Adds prettier, rewrites all files ([@scalvert](https://github.com/scalvert))
+* [#19](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/19) Converts to TS to ensure functional match with Docusaurus APIs ([@scalvert](https://github.com/scalvert))
+
+#### Committers: 1
+- Steve Calvert ([@scalvert](https://github.com/scalvert))
+
+
 ## v0.1.2 (2023-04-13)
 
 #### :memo: Documentation
