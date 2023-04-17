@@ -1,4 +1,14 @@
 
+## v0.1.4 (2023-04-16)
+
+#### :bug: Bug Fix
+
+- Fixes publishing to include `lib` output from `prepublishOnly` ([@scalvert](https://github.com/scalvert))
+
+#### Committers: 1
+- Steve Calvert ([@scalvert](https://github.com/scalvert))
+
+
 ## v0.1.3 (2023-04-16)
 
 #### :house: Internal
