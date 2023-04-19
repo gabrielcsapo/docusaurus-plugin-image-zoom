@@ -1,0 +1,37 @@
+name: Docusarurus Version Compatibility Test
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  compatibility-setup:
+    runs-on: ubuntu-latest
+    outputs:
+      docusaurus-versions: ${{ steps.set-matrix.outputs.docusaurus-versions }}
+    steps:
+      - name: Version compatibility test setup
+        id: set-matrix
+        uses: scalvert/docusaurus-version-compatibility@v1
+        with:
+          setup-versions: true
+
+  compatibility-test:
+    runs-on: ubuntu-latest
+    name: Docusaurus @${{ matrix.docusaurus-version }}
+
+    needs: compatibility-setup
+
+    strategy:
+      matrix:
+        docusaurus-version: ${{ fromJson(needs.compatibility-setup.outputs.docusaurus-versions) }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: volta-cli/action@v4
+      - uses: scalvert/docusaurus-version-compatibility@v1
+        with:
+          version: ${{ matrix.docusaurus-version }}
+      - run: yarn --no-immutable
+      - run: yarn test
