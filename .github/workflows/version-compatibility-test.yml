@@ -33,5 +33,5 @@ jobs:
       - uses: scalvert/docusaurus-version-compatibility@v1
         with:
           version: ${{ matrix.docusaurus-version }}
-      - run: yarn --no-immutable
-      - run: yarn test
+      - run: npm i
+      - run: npm test
