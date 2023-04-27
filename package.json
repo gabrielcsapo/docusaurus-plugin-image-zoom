@@ -20,7 +20,8 @@
     "test": "echo 'none for now'"
   },
   "dependencies": {
-    "medium-zoom": "^1.0.6"
+    "medium-zoom": "^1.0.6",
+    "validate-peer-dependencies": "^2.2.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.4.0",
@@ -32,6 +33,11 @@
     "prettier": "^2.8.7",
     "release-it": "^15.5.0",
     "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@docusaurus/module-type-aliases": ">=2.2.0",
+    "@docusaurus/theme-classic": ">=2.2.0",
+    "@docusaurus/types": ">=2.2.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
