@@ -1,4 +1,14 @@
 
+
+## v1.0.0 (2023-04-27)
+
+#### :rocket: Enhancement
+* [#23](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/23) Ensuring dependencies for this package via validate-peer-dependencies ([@scalvert](https://github.com/scalvert))
+
+#### Committers: 1
+- Steve Calvert ([@scalvert](https://github.com/scalvert))
+
+
 ## v0.1.4 (2023-04-16)
 
 #### :bug: Bug Fix
