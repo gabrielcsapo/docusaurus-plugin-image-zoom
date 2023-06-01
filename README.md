@@ -10,12 +10,34 @@ npm install docusaurus-plugin-image-zoom
 
 ## Usage
 
-Add as a plugin to `docusaurus.config.js`:
+Update `docusaurus.config.js` to enable the plugin and include its default configuration:
 
 ```js
-  plugins: [
-    require.resolve('docusaurus-plugin-image-zoom')
-  ],
+  const config = {
+    // ...other config
+    
+    plugins: [
+      'docusaurus-plugin-image-zoom', // can also just be 'image-zoom'
+      // ...other plugins
+    ],
+    
+    themeConfig: {
+      // ...other themeConfig
+      
+      zoom: {
+        selector: '.markdown > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        }
+      }
+    },
+  }
+  
+  module.exports = config;
 ```
 
 ## Configuration
@@ -27,7 +49,6 @@ This plugin allows you to configure the following options:
 | `selector`    | (optional) The selector to use for the images to zoom.                                          | `.markdown img`                                                                                      |
 | `background`  | (optional) The background color to use for the zoomed image.                                     | `{ light: 'rgb(255, 255, 255)', dark: 'rgb(50, 50, 50)' }`                                           |
 | `config`      | (optional) The configuration object to pass to `medium-zoom`.                                   | `{}`                                                                                                 |
-
 
 Example usage in `docusaurus.config.js`:
 
