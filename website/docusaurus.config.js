@@ -1,5 +1,4 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const prism = require('prism-react-renderer');
 
 module.exports = {
   title: 'docusaurus-plugin-image-zoom',
@@ -83,12 +82,12 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Gabriel J. Csapo. Built with Docusaurus.`,
     },
     prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
+      theme: prism.themes.github,
+      darkTheme: prism.themes.dracula,
     },
   },
   plugins: [
-    [require.resolve('../src/index.js'), { id: 'docusaurus-plugin-image-zoom' }],
+    [require.resolve('../lib/index.js'), { id: 'docusaurus-plugin-image-zoom' }],
     [
       require.resolve('docusaurus-plugin-search-local'),
       {
