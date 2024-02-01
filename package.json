@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-plugin-image-zoom",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "private": false,
   "description": "Docusaurus plugin to utilize https://www.npmjs.com/package/medium-zoom in your projects easily!",
   "homepage": "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom#readme",

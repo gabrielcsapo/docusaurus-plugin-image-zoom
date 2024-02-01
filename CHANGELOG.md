@@ -1,6 +1,20 @@
 
 
 
+
+## v2.0.0 (2024-02-01)
+
+#### :boom: Breaking Change
+* [#30](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/30) Upgrading to Docusaurus v3 ([@scalvert](https://github.com/scalvert))
+
+#### :memo: Documentation
+* [#26](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/26) Document update: Usage section ([@chellman](https://github.com/chellman))
+
+#### Committers: 2
+- Steve Calvert ([@scalvert](https://github.com/scalvert))
+- [@chellman](https://github.com/chellman)
+
+
 ## v1.0.1 (2023-05-11)
 
 #### :bug: Bug Fix
