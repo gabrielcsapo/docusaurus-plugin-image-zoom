@@ -4,7 +4,7 @@ import validatePeerDependencies from 'validate-peer-dependencies';
 
 validatePeerDependencies(__dirname);
 
-module.exports = function (): Plugin {
+export default function (): Plugin {
   return {
     name: 'docusaurus-plugin-image-zoom',
 
@@ -12,4 +12,4 @@ module.exports = function (): Plugin {
       return [path.resolve(__dirname, './zoom')];
     },
   };
-};
+}
