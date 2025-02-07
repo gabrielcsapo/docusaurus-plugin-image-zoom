@@ -1,7 +1,6 @@
 {
   "name": "docusaurus-plugin-image-zoom",
   "version": "2.0.0",
-  "private": false,
   "description": "Docusaurus plugin to utilize https://www.npmjs.com/package/medium-zoom in your projects easily!",
   "homepage": "https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom#readme",
   "bugs": {
@@ -21,20 +20,20 @@
     "test": "echo 'none for now'"
   },
   "dependencies": {
-    "medium-zoom": "^1.0.8",
+    "medium-zoom": "^1.1.0",
     "validate-peer-dependencies": "^2.2.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.0.0",
-    "@docusaurus/theme-classic": "^3.0.0",
-    "@docusaurus/tsconfig": "^3.0.0",
-    "@docusaurus/types": "^3.0.0",
-    "@release-it-plugins/lerna-changelog": "^6.0.0",
-    "@types/node": "^20.8.10",
-    "@types/react": "^18.2.34",
-    "prettier": "^3.0.3",
-    "release-it": "^16.2.1",
-    "typescript": "^5.2.2"
+    "@docusaurus/module-type-aliases": "^3.7.0",
+    "@docusaurus/theme-classic": "^3.7.0",
+    "@docusaurus/tsconfig": "^3.7.0",
+    "@docusaurus/types": "^3.7.0",
+    "@release-it-plugins/lerna-changelog": "^7.0.0",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "prettier": "^3.4.2",
+    "release-it": "^18.1.2",
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
     "@docusaurus/theme-classic": ">=3.0.0"
@@ -58,6 +57,7 @@
     }
   },
   "volta": {
-    "node": "18.18.2"
+    "yarn": "4.6.0",
+    "node": "23.5.0"
   }
 }

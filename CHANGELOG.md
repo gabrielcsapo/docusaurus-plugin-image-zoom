@@ -1,37 +1,37 @@
-
-
-
-
 ## v2.0.0 (2024-02-01)
 
 #### :boom: Breaking Change
-* [#30](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/30) Upgrading to Docusaurus v3 ([@scalvert](https://github.com/scalvert))
+
+- [#30](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/30) Upgrading to Docusaurus v3 ([@scalvert](https://github.com/scalvert))
 
 #### :memo: Documentation
-* [#26](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/26) Document update: Usage section ([@chellman](https://github.com/chellman))
+
+- [#26](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/26) Document update: Usage section ([@chellman](https://github.com/chellman))
 
 #### Committers: 2
+
 - Steve Calvert ([@scalvert](https://github.com/scalvert))
 - [@chellman](https://github.com/chellman)
-
 
 ## v1.0.1 (2023-05-11)
 
 #### :bug: Bug Fix
-* [#24](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/24) Removing types-only packages from peerDependencies ([@scalvert](https://github.com/scalvert))
+
+- [#24](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/24) Removing types-only packages from peerDependencies ([@scalvert](https://github.com/scalvert))
 
 #### Committers: 1
-- Steve Calvert ([@scalvert](https://github.com/scalvert))
 
+- Steve Calvert ([@scalvert](https://github.com/scalvert))
 
 ## v1.0.0 (2023-04-27)
 
 #### :rocket: Enhancement
-* [#23](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/23) Ensuring dependencies for this package via validate-peer-dependencies ([@scalvert](https://github.com/scalvert))
+
+- [#23](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/23) Ensuring dependencies for this package via validate-peer-dependencies ([@scalvert](https://github.com/scalvert))
 
 #### Committers: 1
-- Steve Calvert ([@scalvert](https://github.com/scalvert))
 
+- Steve Calvert ([@scalvert](https://github.com/scalvert))
 
 ## v0.1.4 (2023-04-16)
 
@@ -40,18 +40,19 @@
 - Fixes publishing to include `lib` output from `prepublishOnly` ([@scalvert](https://github.com/scalvert))
 
 #### Committers: 1
-- Steve Calvert ([@scalvert](https://github.com/scalvert))
 
+- Steve Calvert ([@scalvert](https://github.com/scalvert))
 
 ## v0.1.3 (2023-04-16)
 
 #### :house: Internal
-* [#20](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/20) Adds prettier, rewrites all files ([@scalvert](https://github.com/scalvert))
-* [#19](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/19) Converts to TS to ensure functional match with Docusaurus APIs ([@scalvert](https://github.com/scalvert))
+
+- [#20](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/20) Adds prettier, rewrites all files ([@scalvert](https://github.com/scalvert))
+- [#19](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/19) Converts to TS to ensure functional match with Docusaurus APIs ([@scalvert](https://github.com/scalvert))
 
 #### Committers: 1
-- Steve Calvert ([@scalvert](https://github.com/scalvert))
 
+- Steve Calvert ([@scalvert](https://github.com/scalvert))
 
 ## v0.1.2 (2023-04-13)
 
