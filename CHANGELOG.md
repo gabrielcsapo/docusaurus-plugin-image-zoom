@@ -1,4 +1,13 @@
 
+## v3.0.1 (2025-02-07)
+
+- [https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/commit/17423b7dbb8efa90e95baf2e7d825149c8bc9f33] ensure noEmit is false to have lib files properly show up in output
+
+#### Committers: 1
+- Gabriel Csapo ([@gabrielcsapo](https://github.com/gabrielcsapo))
+
+
+
 ## v3.0.0 (2025-02-07)
 
 #### :boom: Breaking Change
