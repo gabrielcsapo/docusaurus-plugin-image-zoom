@@ -1,8 +1,10 @@
 {
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "types": ["node", "@docusaurus/module-type-aliases", "@docusaurus/theme-classic"]
+    "types": ["node", "@docusaurus/module-type-aliases", "@docusaurus/theme-classic"],
+    "outDir": "lib",
+    "noEmit": false
   },
-  "include": ["./src"],
+  "include": ["./src/**/*.ts"],
   "exclude": ["**/node_modules/**"]
 }
