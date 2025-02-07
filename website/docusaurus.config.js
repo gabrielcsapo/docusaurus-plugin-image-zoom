@@ -87,7 +87,7 @@ module.exports = {
     },
   },
   plugins: [
-    [require.resolve('../lib/index.js'), { id: 'docusaurus-plugin-image-zoom' }],
+    [require.resolve('docusaurus-plugin-image-zoom'), { id: 'docusaurus-plugin-image-zoom' }],
     [
       require.resolve('docusaurus-plugin-search-local'),
       {

@@ -27,14 +27,8 @@ jobs:
       - name: Install Volta
         uses: volta-cli/action@v4
 
-      - name: Install dependencies
-        run: yarn install
-
-      - name: Build
-        run: yarn build
-
       - name: Build Website
-        run: cd website && yarn install && yarn build
+        run: yarn install && yarn build && cd website && yarn install && yarn build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
