@@ -34,7 +34,7 @@ jobs:
         run: yarn build
 
       - name: Build Website
-        run: cd website && npm install && npm run build
+        run: cd website && yarn install && yarn build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
