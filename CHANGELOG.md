@@ -1,3 +1,13 @@
+
+## v3.0.0 (2025-02-07)
+
+#### :boom: Breaking Change
+* [#31](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom/pull/31) Converts plugin to ESM ([@scalvert](https://github.com/scalvert))
+
+#### Committers: 2
+- Gabriel Csapo ([@gabrielcsapo](https://github.com/gabrielcsapo))
+- Steve Calvert ([@scalvert](https://github.com/scalvert))
+
 ## v2.0.0 (2024-02-01)
 
 #### :boom: Breaking Change
